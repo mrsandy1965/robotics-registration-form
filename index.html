@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ROBOMAZE Event Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>ROBOMAZE</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" role="button">Register</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>ROBOMAZE</h2>
+                    <h3>Date: Saturday, 25/01/2025 | Time: 10:00 AM onwards</h3>
+                </hgroup>
+                <p>Venue: Classroom 2, Newton School Of Technology - ADYPU, Pune</p>
+                <figure>
+                    <img src="./robomaze-hero-img.jpg" alt="Robotics Event">
+                </figure>
+                <h3>Event Registration Form</h3>
+                <p>Fill in the details below to participate in the ROBOMAZE event.</p>
+
+                <form>
+                    <label for="teamName">Team Name</label>
+                    <input type="text" id="teamName" name="teamName" placeholder="Enter your team name" required>
+
+                    <label for="leaderName">Team Leader Name</label>
+                    <input type="text" id="leaderName" name="leaderName" placeholder="Enter leader's name" required>
+
+                    <label for="leaderMobile">Leader Mobile Number</label>
+                    <input type="tel" id="leaderMobile" name="leaderMobile" placeholder="Enter mobile number" required>
+
+                    <label for="leaderEmail">Leader Email</label>
+                    <input type="email" id="leaderEmail" name="leaderEmail" placeholder="Enter email" required>
+
+                    <h3>Team Members</h3>
+                    <label for="member1">Member 1 Name</label>
+                    <input type="text" id="member1" name="member1" placeholder="Enter member 1 name" required>
+
+                    <label for="member2">Member 2 Name</label>
+                    <input type="text" id="member2" name="member2" placeholder="Enter member 2 name" required>
+
+                    <label for="member3">Member 3 Name</label>
+                    <input type="text" id="member3" name="member3" placeholder="Enter member 3 name">
+
+                    <h3>Checklist</h3>
+                    <label><input type="checkbox" name="agreement" required> I agree to the event rules and regulations.</label>
+                    <label><input type="checkbox" name="updates" required> I agree to receive updates about the event.</label>
+
+                    <button type="submit" onclick="event.preventDefault()">Submit</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="container">
+        <small>
+            <a href="#">Terms & Conditions</a> • 
+            <a href="#">Privacy Policy</a>
+        </small>
+    </footer>
+</body>
+</html>
